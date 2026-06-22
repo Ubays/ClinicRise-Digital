@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClinicRise Digital – AI-Powered Growth for Dental Clinics in Kerala</title>
+  <meta name="description" content="ClinicRise Digital helps dental clinics across Kerala attract more patients, dominate Google Maps, and automate patient communication using cutting-edge AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ░░ LOADER ░░ -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">Clinic<span>Rise</span></div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- ░░ CURSOR ░░ -->
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+
+<!-- ░░ NAVBAR ░░ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo">Clinic<span>Rise</span> <em>Digital</em></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#problems">Challenges</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#clinicos">ClinicOS</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#audit" class="nav-cta">Free Audit</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="#problems" onclick="closeMobile()">Challenges</a></li>
+    <li><a href="#services" onclick="closeMobile()">Services</a></li>
+    <li><a href="#clinicos" onclick="closeMobile()">ClinicOS</a></li>
+    <li><a href="#pricing" onclick="closeMobile()">Pricing</a></li>
+    <li><a href="#why" onclick="closeMobile()">Why Us</a></li>
+    <li><a href="#audit" onclick="closeMobile()" class="mobile-cta">Free Audit</a></li>
+  </ul>
+</div>
+
+<!-- ░░ HERO ░░ -->
+<section id="hero">
+  <canvas id="particle-canvas"></canvas>
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge anim-fade-up" style="--d:0s">
+        <span class="badge-dot"></span>
+        AI-Powered Dental Marketing &bull; Kerala
+      </div>
+      <h1 class="hero-title anim-fade-up" style="--d:.1s">
+        More Patients.<br>
+        <span class="gradient-text">Smarter Growth.</span><br>
+        Better Visibility.
+      </h1>
+      <p class="hero-sub anim-fade-up" style="--d:.2s">
+        ClinicRise Digital helps dental clinics across Kerala attract more patients, dominate Google Maps, and automate patient communication using cutting-edge AI solutions.
+      </p>
+      <div class="hero-btns anim-fade-up" style="--d:.3s">
+        <a href="#audit" class="btn-primary magnetic">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Get Free Growth Audit
+        </a>
+        <a href="https://wa.me/919400000000" class="btn-outline magnetic" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+      <div class="hero-stats anim-fade-up" style="--d:.4s">
+        <div class="stat-pill"><span class="counter" data-target="50">0</span><sup>+</sup> <em>Dental Clinics</em></div>
+        <div class="stat-divider"></div>
+        <div class="stat-pill"><span class="counter" data-target="3">0</span><sup>×</sup> <em>Avg Patient Growth</em></div>
+        <div class="stat-divider"></div>
+        <div class="stat-pill"><span class="counter-dec" data-target="4.9">0</span><sup>★</sup> <em>Client Rating</em></div>
+      </div>
+    </div>
+
+    <!-- 3D Dashboard Visual -->
+    <div class="hero-visual anim-fade-right" style="--d:.2s">
+      <div class="dashboard-3d" id="dashboard3d">
+        <!-- Floating stat cards -->
+        <div class="float-card fc-1">
+          <div class="fc-icon">📈</div>
+          <div class="fc-data">
+            <div class="fc-label">New Patients / Month</div>
+            <div class="fc-value">+47</div>
+            <div class="fc-trend up">↑ 68% vs last month</div>
+          </div>
+        </div>
+        <div class="float-card fc-2">
+          <div class="fc-icon">⭐</div>
+          <div class="fc-data">
+            <div class="fc-label">Google Reviews</div>
+            <div class="fc-value">4.9★</div>
+            <div class="fc-trend up">↑ 124 new reviews</div>
+          </div>
+        </div>
+        <div class="float-card fc-3">
+          <div class="fc-icon">📍</div>
+          <div class="fc-data">
+            <div class="fc-label">Maps Rank</div>
+            <div class="fc-value">#1</div>
+            <div class="fc-trend up">Local Pack</div>
+          </div>
+        </div>
+
+        <!-- Browser Window -->
+        <div class="browser-window">
+          <div class="bw-topbar">
+            <div class="bw-dots">
+              <span class="bw-dot r"></span>
+              <span class="bw-dot y"></span>
+              <span class="bw-dot g"></span>
+            </div>
+            <div class="bw-url">app.clinicrisedigital.com/dashboard</div>
+          </div>
+          <div class="bw-body">
+            <!-- Sidebar -->
+            <div class="bw-sidebar">
+              <div class="bw-brand">CR<span>D</span></div>
+              <div class="bw-nav-item active" title="Dashboard">🏠</div>
+              <div class="bw-nav-item" title="Calendar">📅</div>
+              <div class="bw-nav-item" title="Patients">👥</div>
+              <div class="bw-nav-sep"></div>
+              <div class="bw-nav-item" title="AI">🤖</div>
+              <div class="bw-nav-item" title="Reports">📊</div>
+            </div>
+            <!-- Main -->
+            <div class="bw-main">
+              <div class="bw-header">
+                <div>
+                  <div class="bw-greeting">Good evening, Dr. Demo</div>
+                  <div class="bw-date">Sunday, June 21, 2026 — My Clinic</div>
+                </div>
+                <div class="bw-live-dot"><span></span> LIVE</div>
+              </div>
+              <div class="bw-kpi-row">
+                <div class="bw-kpi">
+                  <div class="bw-kpi-icon">📅</div>
+                  <div class="bw-kpi-num teal">14</div>
+                  <div class="bw-kpi-label">Today</div>
+                </div>
+                <div class="bw-kpi">
+                  <div class="bw-kpi-icon">⏰</div>
+                  <div class="bw-kpi-num">2</div>
+                  <div class="bw-kpi-label">Upcoming</div>
+                </div>
+                <div class="bw-kpi">
+                  <div class="bw-kpi-icon">👥</div>
+                  <div class="bw-kpi-num green">5</div>
+                  <div class="bw-kpi-label">Patients</div>
+                </div>
+                <div class="bw-kpi">
+                  <div class="bw-kpi-icon">✅</div>
+                  <div class="bw-kpi-num teal">67%</div>
+                  <div class="bw-kpi-label">Completion</div>
+                </div>
+              </div>
+              <div class="bw-appt-label">Upcoming Appointments</div>
+              <div class="bw-appt-list">
+                <div class="bw-appt"><span class="bw-av blue">AK</span><span class="bw-aname">Arjun Kumar</span><span class="bw-atype">Root Canal</span><span class="bw-astatus confirmed">Confirmed</span></div>
+                <div class="bw-appt"><span class="bw-av teal">PM</span><span class="bw-aname">Priya Menon</span><span class="bw-atype">Cleaning</span><span class="bw-astatus done">Done</span></div>
+                <div class="bw-appt"><span class="bw-av purple">RN</span><span class="bw-aname">Rahul Nair</span><span class="bw-atype">Braces</span><span class="bw-astatus pending">Pending</span></div>
+              </div>
+              <div class="bw-ai-chip">
+                <span class="ai-pulse"></span>
+                <strong>AI Insight:</strong> 3 patients due for follow-up — reminders sent
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll to explore</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ░░ MARQUEE / TRUST BAR ░░ -->
+<div class="trust-bar">
+  <div class="trust-track">
+    <span>🦷 Google Maps #1 Rankings</span>
+    <span>⭐ 100+ Reviews Per Clinic / Year</span>
+    <span>🤖 AI Patient Communication</span>
+    <span>📈 3× Patient Growth in 90 Days</span>
+    <span>💻 Mobile-First Websites</span>
+    <span>📍 Kerala Local SEO Experts</span>
+    <span>🔔 Automated Follow-ups</span>
+    <span>📊 Live Clinic Dashboard</span>
+    <span>🦷 Google Maps #1 Rankings</span>
+    <span>⭐ 100+ Reviews Per Clinic / Year</span>
+    <span>🤖 AI Patient Communication</span>
+    <span>📈 3× Patient Growth in 90 Days</span>
+    <span>💻 Mobile-First Websites</span>
+    <span>📍 Kerala Local SEO Experts</span>
+    <span>🔔 Automated Follow-ups</span>
+    <span>📊 Live Clinic Dashboard</span>
+  </div>
+</div>
+
+<!-- ░░ PROBLEMS ░░ -->
+<section id="problems" class="section-light">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left">
+        <div class="section-tag">The Reality</div>
+        <h2 class="section-title">Is Your Clinic Facing <span class="accent">These Challenges?</span></h2>
+        <p class="section-sub">Most dental clinics in Kerala struggle with the same digital problems. You're not alone — and there's a proven fix.</p>
+        <div class="problem-list">
+          <div class="problem-card reveal" style="--sd:.05s">
+            <div class="problem-icon">📉</div>
+            <div>
+              <h4>Low Patient Enquiries</h4>
+              <p>Despite having a website, potential patients can't find you online when they search.</p>
+            </div>
+          </div>
+          <div class="problem-card reveal" style="--sd:.1s">
+            <div class="problem-icon">📍</div>
+            <div>
+              <h4>Poor Google Maps Visibility</h4>
+              <p>Competitors rank above you even in your own locality and neighbourhood.</p>
+            </div>
+          </div>
+          <div class="problem-card reveal" style="--sd:.15s">
+            <div class="problem-icon">📱</div>
+            <div>
+              <h4>Inconsistent Social Media</h4>
+              <p>No time for regular content, resulting in zero patient trust online.</p>
+            </div>
+          </div>
+          <div class="problem-card reveal" style="--sd:.2s">
+            <div class="problem-icon">⭐</div>
+            <div>
+              <h4>Lack of Google Reviews</h4>
+              <p>Fewer reviews means less credibility and lower search rankings.</p>
+            </div>
+          </div>
+          <div class="problem-card reveal" style="--sd:.25s">
+            <div class="problem-icon">🔔</div>
+            <div>
+              <h4>Missed Patient Follow-ups</h4>
+              <p>No automated systems means patients book with competitors instead.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="solution-card">
+          <div class="solution-glow"></div>
+          <div class="solution-badge">The Solution</div>
+          <h3>ClinicRise Digital Solves All of This</h3>
+          <p>We've built a complete AI-powered growth system specifically designed for dental clinics in Kerala. From Google domination to automated patient follow-ups — we handle it all.</p>
+          <ul class="solution-list">
+            <li><span class="check">✓</span> Dominate Google Search &amp; Maps</li>
+            <li><span class="check">✓</span> AI-powered patient communication</li>
+            <li><span class="check">✓</span> Automated review generation</li>
+            <li><span class="check">✓</span> Professional social media presence</li>
+            <li><span class="check">✓</span> Mobile-first website that converts</li>
+            <li><span class="check">✓</span> Kerala-specific local SEO strategy</li>
+          </ul>
+          <a href="#audit" class="btn-primary magnetic" style="margin-top:32px;display:inline-flex;">Start Growing Today →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ SERVICES ░░ -->
+<section id="services" class="section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag light">Our Services</div>
+      <h2 class="section-title light">Everything Your Clinic <span class="gradient-text">Needs to Grow</span></h2>
+      <p class="section-sub light">Five comprehensive services working together to fill your appointment book — every single month.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card tilt-card reveal" style="--sd:.0s">
+        <div class="sc-number">01</div>
+        <div class="sc-icon">📍</div>
+        <h3>Google Business Profile Optimization</h3>
+        <p>Rank at the top of Google Maps and Search when patients look for dentists near them. Own your local market completely.</p>
+        <ul class="sc-list">
+          <li>Full Profile Optimization</li>
+          <li>Review Growth Strategy</li>
+          <li>Weekly Google Posts</li>
+          <li>Local SEO Enhancements</li>
+        </ul>
+        <div class="sc-arrow">→</div>
+      </div>
+      <div class="service-card featured tilt-card reveal" style="--sd:.08s">
+        <div class="sc-popular">Most Popular</div>
+        <div class="sc-number">02</div>
+        <div class="sc-icon">🤖</div>
+        <h3>AI-Powered Patient Engagement</h3>
+        <p>Never miss a patient again. AI handles chat, reminders, and follow-ups automatically 24/7 — while you focus on dentistry.</p>
+        <ul class="sc-list">
+          <li>AI Chat Assistant</li>
+          <li>Appointment Reminders</li>
+          <li>Automated Follow-ups</li>
+          <li>FAQ Automation</li>
+        </ul>
+        <div class="sc-arrow">→</div>
+      </div>
+      <div class="service-card tilt-card reveal" style="--sd:.16s">
+        <div class="sc-number">03</div>
+        <div class="sc-icon">📸</div>
+        <h3>Social Media Management</h3>
+        <p>Build trust and educate potential patients with consistent, professional content that turns followers into bookings.</p>
+        <ul class="sc-list">
+          <li>Professional Designs</li>
+          <li>Educational Content</li>
+          <li>Reels &amp; Short Videos</li>
+          <li>Monthly Content Calendar</li>
+        </ul>
+        <div class="sc-arrow">→</div>
+      </div>
+      <div class="service-card tilt-card reveal" style="--sd:.24s">
+        <div class="sc-number">04</div>
+        <div class="sc-icon">💻</div>
+        <h3>Website Development</h3>
+        <p>Modern, fast, mobile-friendly websites that turn visitors into patients with clear calls-to-action and seamless booking.</p>
+        <ul class="sc-list">
+          <li>Responsive Design</li>
+          <li>Appointment Forms</li>
+          <li>WhatsApp Integration</li>
+          <li>SEO Optimization</li>
+        </ul>
+        <div class="sc-arrow">→</div>
+      </div>
+      <div class="service-card tilt-card reveal" style="--sd:.32s">
+        <div class="sc-number">05</div>
+        <div class="sc-icon">⭐</div>
+        <h3>Online Reputation Management</h3>
+        <p>Build an impressive 5-star reputation that makes patients choose you over every competitor in your area.</p>
+        <ul class="sc-list">
+          <li>Review Growth Strategy</li>
+          <li>Review Monitoring</li>
+          <li>Feedback Collection</li>
+          <li>Reputation Reporting</li>
+        </ul>
+        <div class="sc-arrow">→</div>
+      </div>
+      <div class="service-card cta-card reveal" style="--sd:.4s">
+        <div class="cta-card-inner">
+          <div style="font-size:48px;margin-bottom:20px;">🚀</div>
+          <h3>Ready to Fill Your Appointment Book?</h3>
+          <p>Start with a free audit. No commitment, just clarity on how to grow your clinic.</p>
+          <a href="#audit" class="btn-primary magnetic" style="margin-top:24px;display:inline-flex;">Get Free Audit →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ CLINICOS SAAS ░░ -->
+<section id="clinicos" class="section-light">
+  <div class="container">
+    <div class="clinicos-header reveal">
+      <div class="clinicos-badge">
+        <span class="badge-dot teal"></span>
+        Introducing
+        <span class="new-pill">NEW</span>
+      </div>
+      <h2 class="section-title">Meet <span class="gradient-text">ClinicOS</span> — The Complete<br class="hide-sm">Clinic Management Platform</h2>
+      <p class="section-sub">Beyond marketing — run your entire dental clinic from one intelligent dashboard. AI-powered scheduling, patient records, billing, and automation built specifically for Kerala dental practices.</p>
+    </div>
+
+    <div class="clinicos-showcase">
+      <!-- Full Dashboard Mockup -->
+      <div class="clinicos-window reveal-left">
+        <div class="clinicos-topbar">
+          <div class="cw-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+          <div class="cw-brand">
+            <span class="cw-logo">🏥</span>
+            <div><div class="cw-app-name">ClinicRise Digital</div><div class="cw-app-sub">My Clinic</div></div>
+          </div>
+          <div class="cw-search">🔍 Search patients, appointments...</div>
+          <div class="cw-user">
+            <div class="cw-notif">🔔</div>
+            <div class="cw-avatar">DU</div>
+            <div class="cw-uname"><div>Demo User</div><div class="cw-email">ubays7771@gmail.com</div></div>
+          </div>
+        </div>
+        <div class="cw-body">
+          <!-- Sidebar -->
+          <div class="cw-sidebar">
+            <div class="cw-sidebar-label">MAIN</div>
+            <div class="cw-sidebar-item active"><span>🏠</span> Dashboard</div>
+            <div class="cw-sidebar-item"><span>📅</span> Calendar</div>
+            <div class="cw-sidebar-item"><span>📋</span> Appointments</div>
+            <div class="cw-sidebar-item"><span>👥</span> Patients</div>
+            <div class="cw-sidebar-item"><span>💊</span> Services</div>
+            <div class="cw-sidebar-label" style="margin-top:12px">CONFIG</div>
+            <div class="cw-sidebar-item"><span>🤖</span> AI Settings</div>
+            <div class="cw-sidebar-item"><span>⚙️</span> Settings</div>
+            <div class="cw-sidebar-item"><span>💳</span> Billing</div>
+            <div class="cw-sidebar-item"><span>👤</span> My Profile</div>
+            <div class="cw-ai-badge">
+              <span>✨</span> AI Powered
+              <div class="cw-ai-sub">24/7 smart booking assistant active</div>
+            </div>
+          </div>
+          <!-- Main Content -->
+          <div class="cw-main">
+            <div class="cw-live-badge"><span class="live-dot"></span> LIVE DASHBOARD</div>
+            <div class="cw-page-title">Good evening, Dr. Demo</div>
+            <div class="cw-page-sub">Sunday, June 21, 2026 — My Clinic</div>
+            <div class="cw-view-btn">📊 View All Appointments →</div>
+
+            <!-- KPI Cards -->
+            <div class="cw-kpi-grid">
+              <div class="cw-kpi-card">
+                <div class="cw-kpi-top"><span>TODAY</span><span class="cw-kpi-icon">📅</span></div>
+                <div class="cw-kpi-val">0</div>
+                <div class="cw-kpi-sub">Scheduled today</div>
+              </div>
+              <div class="cw-kpi-card">
+                <div class="cw-kpi-top"><span>UPCOMING</span><span class="cw-kpi-icon">⏰</span></div>
+                <div class="cw-kpi-val">2</div>
+                <div class="cw-kpi-sub">Booked &amp; confirmed</div>
+              </div>
+              <div class="cw-kpi-card">
+                <div class="cw-kpi-top"><span>PATIENTS</span><span class="cw-kpi-icon">👥</span></div>
+                <div class="cw-kpi-val teal">5</div>
+                <div class="cw-kpi-sub">↑ All time</div>
+              </div>
+              <div class="cw-kpi-card">
+                <div class="cw-kpi-top"><span>CANCELLATIONS</span><span class="cw-kpi-icon red">🚫</span></div>
+                <div class="cw-kpi-val">0</div>
+                <div class="cw-kpi-sub">All clear</div>
+              </div>
+              <div class="cw-kpi-card">
+                <div class="cw-kpi-top"><span>COMPLETION</span><span class="cw-kpi-icon green">✅</span></div>
+                <div class="cw-kpi-val teal">67%</div>
+                <div class="cw-kpi-sub">↑ vs. total</div>
+              </div>
+              <div class="cw-kpi-card">
+                <div class="cw-kpi-top"><span>NO-SHOWS</span><span class="cw-kpi-icon">📉</span></div>
+                <div class="cw-kpi-val orange">33%</div>
+                <div class="cw-kpi-sub">↓ Missed visits</div>
+              </div>
+            </div>
+
+            <div class="cw-lower-grid">
+              <!-- Schedule -->
+              <div class="cw-schedule">
+                <div class="cw-schedule-hdr">
+                  <div>
+                    <div class="cw-schedule-title">📅 Today's Schedule</div>
+                    <div class="cw-schedule-sub">Sunday, Jun 21</div>
+                  </div>
+                  <div class="cw-schedule-count">0 appointments</div>
+                </div>
+                <div class="cw-schedule-empty">
+                  <div class="empty-icon">🕐</div>
+                  <div>No appointments found</div>
+                  <div class="empty-sub">Appointments will appear here when booked via the AI widget</div>
+                </div>
+              </div>
+              <!-- Upcoming + AI -->
+              <div class="cw-right-panel">
+                <div class="cw-upcoming">
+                  <div class="cw-upcoming-hdr">⏰ Upcoming <a href="#">See all →</a></div>
+                  <div class="cw-appt-item">
+                    <span class="cw-dot teal"></span>
+                    <div><div class="cw-appt-name">Saira</div><div class="cw-appt-type">General Consultation · Jun 29, 7:00 PM</div></div>
+                  </div>
+                  <div class="cw-appt-item">
+                    <span class="cw-dot teal"></span>
+                    <div><div class="cw-appt-name">Jasim</div><div class="cw-appt-type">General Consultation · Jun 30, 3:00 PM</div></div>
+                  </div>
+                </div>
+                <div class="cw-ai-assistant">
+                  <div class="cw-ai-hdr"><span>✨</span> AI ASSISTANT</div>
+                  <div class="cw-ai-title">Smart Booking Active</div>
+                  <div class="cw-ai-desc">Your AI widget is live and accepting patient bookings 24/7.</div>
+                  <a href="#" class="cw-ai-btn">Configure AI →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features List -->
+      <div class="clinicos-features reveal-right">
+        <div class="clinicos-feat">
+          <div class="cf-icon blue">📅</div>
+          <div class="cf-body">
+            <h4>Smart Appointment Booking</h4>
+            <p>Patients book online 24/7 via your website or WhatsApp. AI auto-confirms, reschedules, and sends reminders — zero manual effort for your staff.</p>
+          </div>
+        </div>
+        <div class="clinicos-feat">
+          <div class="cf-icon teal">🤖</div>
+          <div class="cf-body">
+            <h4>AI Reception Assistant</h4>
+            <p>An intelligent AI handles incoming patient queries, qualifies new leads, answers FAQs in Malayalam &amp; English, and books appointments autonomously.</p>
+          </div>
+        </div>
+        <div class="clinicos-feat">
+          <div class="cf-icon purple">🦷</div>
+          <div class="cf-body">
+            <h4>Digital Patient Records (EMR)</h4>
+            <p>Paperless clinic management — treatment history, X-ray uploads, prescriptions, and dental charts all stored securely in the cloud.</p>
+          </div>
+        </div>
+        <div class="clinicos-feat">
+          <div class="cf-icon orange">💳</div>
+          <div class="cf-body">
+            <h4>Billing &amp; Invoice Automation</h4>
+            <p>Auto-generate invoices, accept UPI/card payments, track outstanding dues, and get monthly revenue reports — all in one place.</p>
+          </div>
+        </div>
+        <div class="clinicos-feat">
+          <div class="cf-icon green">📊</div>
+          <div class="cf-body">
+            <h4>Clinic Analytics Dashboard</h4>
+            <p>Live insights on daily revenue, top treatments, patient retention, no-show rates, and staff performance — visible from your phone anywhere.</p>
+          </div>
+        </div>
+        <div class="clinicos-feat">
+          <div class="cf-icon pink">🔔</div>
+          <div class="cf-body">
+            <h4>Automated Patient Retention</h4>
+            <p>AI-driven follow-up sequences for post-treatment care, recall reminders, birthday greetings, and re-engagement campaigns via WhatsApp.</p>
+          </div>
+        </div>
+        <div class="clinicos-cta">
+          <a href="#pricing" class="btn-primary magnetic">View ClinicOS Pricing →</a>
+          <a href="https://wa.me/919400000000" class="btn-ghost magnetic" target="_blank">Book a Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ RESULTS ░░ -->
+<section id="results" class="section-dark results-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag light">Our Impact</div>
+      <h2 class="section-title light">Real Results for <span class="gradient-text">Real Clinics</span></h2>
+      <p class="section-sub light">Numbers that matter — the kind that show up in your appointment book, not just analytics reports.</p>
+    </div>
+    <div class="results-grid">
+      <div class="result-card reveal" style="--sd:.0s">
+        <div class="result-icon">📈</div>
+        <div class="result-num counter" data-target="3" data-suffix="×">0×</div>
+        <div class="result-label">Average increase in patient enquiries within 90 days</div>
+      </div>
+      <div class="result-card reveal" style="--sd:.1s">
+        <div class="result-icon">⭐</div>
+        <div class="result-num counter" data-target="100" data-suffix="+">0+</div>
+        <div class="result-label">New Google reviews generated per clinic per year</div>
+      </div>
+      <div class="result-card reveal" style="--sd:.2s">
+        <div class="result-icon">📍</div>
+        <div class="result-num counter" data-target="85" data-suffix="%">0%</div>
+        <div class="result-label">Of clinics reach Google Maps top-3 within 60 days</div>
+      </div>
+      <div class="result-card reveal" style="--sd:.3s">
+        <div class="result-icon">🤖</div>
+        <div class="result-num counter" data-target="40" data-suffix="%">0%</div>
+        <div class="result-label">Reduction in missed appointments via AI follow-up</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ WHY CHOOSE ░░ -->
+<section id="why" class="section-light">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left">
+        <div class="why-card">
+          <div class="why-quote">"</div>
+          <h3>Built Exclusively for Dental Clinics in Kerala</h3>
+          <p>We don't work with everyone — we specialize deeply in dental clinic marketing because we understand your patients, your community, and what makes Kerala clinics grow.</p>
+          <div class="founder-row">
+            <div class="founder-avatar">U</div>
+            <div>
+              <div class="founder-name">Ubays Kamarudheen</div>
+              <div class="founder-role">Founder, ClinicRise Digital</div>
+            </div>
+          </div>
+          <div class="why-mini-stat">
+            <div class="wms-label">Avg. Google Rank Improvement</div>
+            <div class="wms-value">Top 3</div>
+            <div class="wms-sub">↑ From page 3+ to #1 Maps</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="section-tag">Why ClinicRise</div>
+        <h2 class="section-title">The <span class="accent">Smart Choice</span> for Dental Growth</h2>
+        <p class="section-sub" style="margin-bottom:40px;">We combine deep dental industry knowledge with cutting-edge AI tools to deliver results that generic agencies simply can't match.</p>
+        <div class="why-points">
+          <div class="why-point reveal" style="--sd:.0s">
+            <div class="wp-num">01</div>
+            <div class="wp-body">
+              <h4>Specialized for Dental Clinics</h4>
+              <p>We exclusively serve dental clinics, meaning our strategies are battle-tested and refined specifically for your industry and patient behaviour.</p>
+            </div>
+          </div>
+          <div class="why-point reveal" style="--sd:.1s">
+            <div class="wp-num">02</div>
+            <div class="wp-body">
+              <h4>AI-Powered Efficiency</h4>
+              <p>Leverage the latest AI tools for patient communication, content creation, and data-driven marketing decisions — at a fraction of traditional costs.</p>
+            </div>
+          </div>
+          <div class="why-point reveal" style="--sd:.2s">
+            <div class="wp-num">03</div>
+            <div class="wp-body">
+              <h4>Kerala Local Market Expertise</h4>
+              <p>We understand Malayalam-speaking patients, local search behaviour, and the Kerala healthcare landscape inside out.</p>
+            </div>
+          </div>
+          <div class="why-point reveal" style="--sd:.3s">
+            <div class="wp-num">04</div>
+            <div class="wp-body">
+              <h4>Personalized Growth Strategy</h4>
+              <p>No cookie-cutter packages. Every clinic gets a custom strategy aligned to their specific location, competition, and goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ PRICING ░░ -->
+<section id="pricing" class="section-dark pricing-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag light">Transparent Pricing</div>
+      <h2 class="section-title light">Simple Plans, <span class="gradient-text">Powerful Results</span></h2>
+      <p class="section-sub light">No hidden fees. No long-term lock-ins. Choose the plan that fits your clinic's stage and scale.</p>
+    </div>
+
+    <!-- Tab Toggle -->
+    <div class="pricing-toggle reveal">
+      <button class="ptab active" data-tab="marketing">Marketing Services</button>
+      <button class="ptab" data-tab="clinicos">ClinicOS Platform</button>
+    </div>
+
+    <!-- Marketing Plans -->
+    <div class="pricing-grid" id="marketing-plans">
+      <div class="pricing-card reveal" style="--sd:.0s">
+        <div class="pc-plan">Launch</div>
+        <div class="pc-price">₹7,999<span>/mo</span></div>
+        <div class="pc-desc">Perfect for clinics just starting their digital journey and looking to build a strong foundation online.</div>
+        <ul class="pc-features">
+          <li>Google Business Profile Setup &amp; Optimization</li>
+          <li>Basic Local SEO (10 keywords)</li>
+          <li>Social Media Management (3 posts/week)</li>
+          <li>Review Growth Strategy</li>
+          <li>Monthly Performance Report</li>
+          <li>WhatsApp Support</li>
+        </ul>
+        <a href="#audit" class="pc-cta magnetic">Get Started</a>
+      </div>
+      <div class="pricing-card popular reveal" style="--sd:.1s">
+        <div class="pc-popular-badge">⭐ Most Popular</div>
+        <div class="pc-plan">Growth</div>
+        <div class="pc-price">₹14,999<span>/mo</span></div>
+        <div class="pc-desc">The complete growth engine for established clinics serious about dominating their local market.</div>
+        <ul class="pc-features">
+          <li>Everything in Launch</li>
+          <li>Advanced Local SEO (25+ keywords)</li>
+          <li>AI Patient Engagement System</li>
+          <li>Social Media (5 posts/week + Reels)</li>
+          <li>Google Ads Management</li>
+          <li>Automated Review Collection</li>
+          <li>WhatsApp Automation</li>
+          <li>Bi-weekly Strategy Calls</li>
+        </ul>
+        <a href="#audit" class="pc-cta magnetic">Start Free Trial</a>
+      </div>
+      <div class="pricing-card reveal" style="--sd:.2s">
+        <div class="pc-plan">Dominate</div>
+        <div class="pc-price">₹24,999<span>/mo</span></div>
+        <div class="pc-desc">The ultimate package for multi-location clinics that want to be the undisputed #1 in Kerala.</div>
+        <ul class="pc-features">
+          <li>Everything in Growth</li>
+          <li>Multi-location SEO</li>
+          <li>ClinicOS Platform (Free)</li>
+          <li>Custom Website Development</li>
+          <li>Video Content Production</li>
+          <li>Influencer Collaboration</li>
+          <li>Dedicated Account Manager</li>
+          <li>Priority 24/7 Support</li>
+        </ul>
+        <a href="#audit" class="pc-cta magnetic">Get Custom Quote</a>
+      </div>
+    </div>
+
+    <!-- ClinicOS Plans -->
+    <div class="pricing-grid hidden" id="clinicos-plans">
+      <div class="pricing-card reveal" style="--sd:.0s">
+        <div class="pc-plan">Starter</div>
+        <div class="pc-price">₹999<span>/mo</span></div>
+        <div class="pc-desc">Perfect for solo dentists getting started with digital clinic management and automation.</div>
+        <ul class="pc-features">
+          <li>Online Appointment Booking</li>
+          <li>Patient Records (up to 500)</li>
+          <li>WhatsApp Appointment Reminders</li>
+          <li>Basic Invoicing &amp; Billing</li>
+          <li>1 Staff Login</li>
+          <li>Mobile App Access</li>
+        </ul>
+        <a href="#audit" class="pc-cta magnetic">Get Started</a>
+      </div>
+      <div class="pricing-card popular reveal" style="--sd:.1s">
+        <div class="pc-popular-badge">⭐ Most Popular</div>
+        <div class="pc-plan">Growth</div>
+        <div class="pc-price">₹2,499<span>/mo</span></div>
+        <div class="pc-desc">The full ClinicOS experience for growing dental practices with complete AI automation.</div>
+        <ul class="pc-features">
+          <li>Everything in Starter</li>
+          <li>AI Reception Assistant (24/7)</li>
+          <li>Unlimited Patient Records (EMR)</li>
+          <li>Billing, UPI &amp; Card Payments</li>
+          <li>Analytics Dashboard</li>
+          <li>5 Staff Logins</li>
+          <li>Patient Retention Campaigns</li>
+          <li>Priority Support</li>
+        </ul>
+        <a href="#audit" class="pc-cta magnetic">Start Free Trial</a>
+      </div>
+      <div class="pricing-card reveal" style="--sd:.2s">
+        <div class="pc-plan">Enterprise</div>
+        <div class="pc-price">Custom</div>
+        <div class="pc-desc">For multi-branch dental chains needing full customization, integrations, and dedicated support.</div>
+        <ul class="pc-features">
+          <li>Everything in Growth</li>
+          <li>Multi-Branch Management</li>
+          <li>Custom AI Training</li>
+          <li>API &amp; EMR Integrations</li>
+          <li>Unlimited Staff Logins</li>
+          <li>Custom Reporting</li>
+          <li>Dedicated Success Manager</li>
+          <li>SLA &amp; Uptime Guarantee</li>
+        </ul>
+        <a href="#audit" class="pc-cta magnetic">Contact Sales</a>
+      </div>
+    </div>
+
+    <div class="pricing-note reveal">
+      <span>🎁</span>
+      <p>All plans come with a <strong>14-day free trial</strong>. No credit card required. Cancel anytime. Questions? <a href="https://wa.me/919400000000" target="_blank">WhatsApp us.</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ TESTIMONIALS ░░ -->
+<section id="testimonials" class="section-light">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Testimonials</div>
+      <h2 class="section-title">What Kerala Dentists <span class="accent">Are Saying</span></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card reveal tilt-card" style="--sd:.0s">
+        <div class="testi-stars">★★★★★</div>
+        <p>"ClinicRise transformed our online presence completely. Within 60 days we went from page 3 to the top of Google Maps. Our appointment book is now consistently full."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">DM</div>
+          <div><strong>Dr. Mohammed Ashraf</strong><div class="testi-clinic">Ashraf Dental Care, Calicut</div></div>
+        </div>
+      </div>
+      <div class="testi-card featured reveal tilt-card" style="--sd:.1s">
+        <div class="testi-stars">★★★★★</div>
+        <p>"The AI patient engagement system is a game-changer. We've reduced no-shows by 45% and the automated WhatsApp follow-ups have brought back so many old patients. Absolutely worth every rupee."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">DS</div>
+          <div><strong>Dr. Sunitha Nair</strong><div class="testi-clinic">SmileCare Dental, Thrissur</div></div>
+        </div>
+      </div>
+      <div class="testi-card reveal tilt-card" style="--sd:.2s">
+        <div class="testi-stars">★★★★★</div>
+        <p>"ClinicOS has replaced 3 separate tools we were using. Managing appointments, patient records, and billing all in one place has saved us 2 hours every single day."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">DK</div>
+          <div><strong>Dr. Krishnapriya V</strong><div class="testi-clinic">Pearl Dental Studio, Cochin</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ AUDIT CTA ░░ -->
+<section id="audit" class="section-light">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal-left">
+        <div class="section-tag">Free Growth Audit</div>
+        <h2 class="section-title">Discover Your Clinic's <span class="accent">Hidden Growth Potential</span></h2>
+        <p class="section-sub" style="margin-bottom:32px;">In 30 minutes, we'll audit your online presence and show you exactly where patients are slipping through the cracks — and how to fix it. Completely free, no strings attached.</p>
+        <div class="audit-checks">
+          <div class="audit-check"><span class="check-dot">✓</span> Website Performance Review</div>
+          <div class="audit-check"><span class="check-dot">✓</span> Google Business Profile Analysis</div>
+          <div class="audit-check"><span class="check-dot">✓</span> Social Media Assessment</div>
+          <div class="audit-check"><span class="check-dot">✓</span> Patient Engagement Opportunities</div>
+          <div class="audit-check"><span class="check-dot">✓</span> AI Automation Recommendations</div>
+          <div class="audit-check"><span class="check-dot">✓</span> Local Competitor Analysis</div>
+        </div>
+        <div class="audit-guarantee">
+          <span class="gift-icon">🎁</span>
+          <div>
+            <strong>100% Free. No Obligation.</strong>
+            <p>We'll deliver your audit within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="audit-form-card">
+          <div class="form-glow"></div>
+          <h3 class="form-title">Request Your Free Audit</h3>
+          <p class="form-sub">Fill in your details and we'll reach out within 24 hours.</p>
+          <form id="auditForm" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" placeholder="Dr. Arun Kumar" required />
+              </div>
+              <div class="form-group">
+                <label for="clinic">Clinic Name *</label>
+                <input type="text" id="clinic" placeholder="Smile Dental Clinic" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp *</label>
+              <input type="tel" id="phone" placeholder="+91 98765 43210" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" placeholder="dr.arun@smileclinic.com" required />
+            </div>
+            <div class="form-group">
+              <label for="website">Clinic Website (Optional)</label>
+              <input type="url" id="website" placeholder="https://yourclinicdomain.com" />
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn">
+              🚀 Request My Free Audit
+            </button>
+            <p class="form-note">🔒 Your information is 100% private and secure</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ FOOTER ░░ -->
+<footer>
+  <div class="footer-grid container">
+    <div class="footer-brand">
+      <div class="footer-logo">Clinic<span>Rise</span> Digital</div>
+      <p>AI-powered growth solutions designed exclusively for dental clinics in Kerala.</p>
+      <div class="footer-contacts">
+        <a href="mailto:hello@clinicrisedigital.com">✉ hello@clinicrisedigital.com</a>
+        <span>📍 Kerala, India</span>
+      </div>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://wa.me/919400000000" target="_blank" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#services">Google Business Optimization</a></li>
+        <li><a href="#services">AI Patient Engagement</a></li>
+        <li><a href="#services">Social Media Management</a></li>
+        <li><a href="#services">Website Development</a></li>
+        <li><a href="#services">Reputation Management</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>ClinicOS</h5>
+      <ul>
+        <li><a href="#clinicos">Smart Scheduling</a></li>
+        <li><a href="#clinicos">AI Reception</a></li>
+        <li><a href="#clinicos">Patient Records (EMR)</a></li>
+        <li><a href="#clinicos">Billing &amp; Invoicing</a></li>
+        <li><a href="#clinicos">Analytics Dashboard</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#why">About Ubays</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#audit">Free Audit</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <div>© 2025 ClinicRise Digital. All rights reserved.</div>
+    <div class="footer-tagline-bottom">More Patients. Better Visibility. Smarter Growth. 🦷</div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a class="wa-float magnetic" href="https://wa.me/919400000000" target="_blank" aria-label="WhatsApp Us">
+  <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-tooltip">Chat with us!</span>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
