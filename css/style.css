@@ -159,9 +159,8 @@ nav.scrolled {
   transition: all .3s;
 }
 
-/* Mobile Nav */
 .mobile-nav {
-  display: none; position: fixed; inset: 0; z-index: 999;
+  display: flex; position: fixed; inset: 0; z-index: 999;
   background: rgba(8,15,26,.97); backdrop-filter: blur(24px);
   flex-direction: column; align-items: center; justify-content: center;
   opacity: 0; pointer-events: none; transition: opacity .3s;
@@ -711,6 +710,52 @@ nav.scrolled {
 .cw-ai-title { font-size: 13px; font-weight: 800; margin-bottom: 4px; }
 .cw-ai-desc  { font-size: 9px; opacity: .8; line-height: 1.5; margin-bottom: 10px; }
 .cw-ai-btn   { background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25); color: white; font-size: 9px; font-weight: 700; padding: 5px 12px; border-radius: 8px; display: inline-block; }
+
+/* ── RESPONSIVE: MOBILE / TABLET FIXES ── */
+@media (max-width: 880px) {
+  /* Show mobile hamburger, hide desktop links */
+  .nav-links { display: none !important; }
+  .hamburger { display: flex !important; cursor: pointer; }
+
+  /* Ensure nav inner padding fits small screens */
+  .nav-inner { padding: 0 18px; }
+
+  /* Mobile nav full-screen adjustments */
+  .mobile-nav a { font-size: 22px; }
+  .mobile-cta { padding: 12px 28px; font-size: 18px; }
+
+  /* Stack hero into single column and reduce padding */
+  .hero-grid { grid-template-columns: 1fr !important; gap: 28px; }
+  .hero-content { order: 1; }
+  .hero-visual  { order: 2; width: 100%; }
+  #hero { padding: 64px 18px 48px; min-height: calc(100vh - 40px); }
+  .hero-badge { margin-bottom: 18px; }
+  .hero-title { font-size: clamp(28px,6.5vw,44px); }
+  .hero-sub  { font-size: 16px; }
+
+  /* Make loader content slightly smaller and centered on small screens */
+  .loader-logo { font-size: 26px; margin-bottom: 14px; }
+  .loader-bar { width: 160px; }
+
+  /* Trust bar and many-grid collapses */
+  .two-col { grid-template-columns: 1fr !important; gap: 28px; }
+  .services-grid { grid-template-columns: 1fr !important; }
+  .results-grid  { grid-template-columns: 1fr !important; }
+
+  /* Hide decorative line breaks on small screens */
+  .hide-sm { display: none !important; }
+}
+
+@media (max-width: 480px) {
+  /* Slightly larger tap targets */
+  .mobile-nav a { font-size: 20px; }
+  .hero-btns .btn-primary, .hero-btns .btn-outline { padding: 12px 18px; font-size: 15px; }
+}
+
+/* Disable custom cursor on touch-only devices to avoid odd behavior */
+@media (hover: none), (pointer: coarse) {
+  #cursor, #cursor-follower { display: none !important; }
+}
 
 /* ClinicOS features sidebar */
 .clinicos-features { display: flex; flex-direction: column; gap: 0; padding-top: 8px; }
