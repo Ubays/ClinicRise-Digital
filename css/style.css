@@ -1087,6 +1087,32 @@ footer { background: var(--dark-2); padding: 80px 24px 0; }
   .hero-visual { display: none; }
   .hero-grid, .hero-visual, .dashboard-3d, .browser-window, .trust-track, .results-grid, .pricing-grid, .footer-grid { min-width: 0; }
   .hero-visual { overflow: hidden; }
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px 12px;
+    margin: 0 auto 20px;
+    border-radius: 28px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+  }
+  .hero-stats .stat-pill {
+    padding: 16px 10px;
+    min-width: 0;
+  }
+  .hero-stats .stat-pill span { font-size: 24px; }
+  .hero-stats .stat-pill em { font-size: 11px; }
+  .hero-stats .stat-divider { display: none; }
+  .hero-scroll-hint {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+    padding-top: 12px;
+  }
+  .hero-btns { justify-content: flex-start; }
   .services-grid { grid-template-columns: 1fr 1fr; }
   .results-grid { grid-template-columns: 1fr 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
