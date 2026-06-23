@@ -1087,10 +1087,7 @@ footer { background: var(--dark-2); padding: 80px 24px 0; }
   .hero-visual { display: none; }
   .hero-grid, .hero-visual, .dashboard-3d, .browser-window, .trust-track, .results-grid, .pricing-grid, .footer-grid { min-width: 0; }
   .hero-visual { overflow: hidden; }
-  .hero-stats {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0;
+  .hero-stats { display: flex; align-items: center; justify-content: center; flex-wrap: nowrap;
     width: 100%;
     max-width: 100%;
     padding: 16px 12px;
@@ -1099,12 +1096,11 @@ footer { background: var(--dark-2); padding: 80px 24px 0; }
     background: rgba(255,255,255,.06);
     border: 1px solid rgba(255,255,255,.12);
   }
-  .hero-stats .stat-pill {
-    padding: 16px 10px;
+  .hero-stats .stat-pill { padding: 12px 8px;
     min-width: 0;
   }
-  .hero-stats .stat-pill span { font-size: 24px; }
-  .hero-stats .stat-pill em { font-size: 11px; }
+  .hero-stats .stat-pill span { font-size: 20px; }
+  .hero-stats .stat-pill em { font-size: 10px; }
   .hero-stats .stat-divider { width: 1px; height: 36px; background: rgba(255,255,255,.12); flex-shrink: 0; }
   .hero-scroll-hint {
     display: none;
@@ -1140,3 +1136,6 @@ footer { background: var(--dark-2); padding: 80px 24px 0; }
   .cw-lower-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
 }
+
+
+
