@@ -1107,12 +1107,13 @@ footer { background: var(--dark-2); padding: 80px 24px 0; }
   .hero-stats .stat-pill em { font-size: 11px; }
   .hero-stats .stat-divider { display: none; }
   .hero-scroll-hint {
-    position: static;
-    transform: none;
-    margin: 0 auto;
-    padding-top: 12px;
+    display: none;
   }
   .hero-btns { justify-content: flex-start; }
+  .hero-title { font-size: clamp(30px,6vw,42px); line-height: 1.08; }
+  .hero-sub { margin-bottom: 30px; }
+  .hero-badge { margin-bottom: 16px; }
+  .hero-btns a { min-width: 160px; }
   .services-grid { grid-template-columns: 1fr 1fr; }
   .results-grid { grid-template-columns: 1fr 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
