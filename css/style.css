@@ -1105,7 +1105,7 @@ footer { background: var(--dark-2); padding: 80px 24px 0; }
   }
   .hero-stats .stat-pill span { font-size: 24px; }
   .hero-stats .stat-pill em { font-size: 11px; }
-  .hero-stats .stat-divider { display: none; }
+  .hero-stats .stat-divider { width: 1px; height: 36px; background: rgba(255,255,255,.12); flex-shrink: 0; }
   .hero-scroll-hint {
     display: none;
   }
