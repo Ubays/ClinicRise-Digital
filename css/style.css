@@ -4,7 +4,7 @@
 
 /* ── RESET & TOKENS ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
 
 :root {
   --blue:       #0D5C7D;
@@ -43,6 +43,9 @@ body {
   background: var(--white);
   overflow-x: hidden;
   cursor: none;
+}
+html, body {
+  max-width: 100vw;
 }
 h1,h2,h3,h4,h5 { font-family: 'Plus Jakarta Sans', sans-serif; }
 a { text-decoration: none; }
@@ -1079,8 +1082,11 @@ footer { background: var(--dark-2); padding: 80px 24px 0; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
 }
 @media (max-width: 900px) {
+  html, body { max-width: 100vw; overflow-x: hidden; }
   .hero-grid, .two-col { grid-template-columns: 1fr; }
   .hero-visual { display: none; }
+  .hero-grid, .hero-visual, .dashboard-3d, .browser-window, .trust-track, .results-grid, .pricing-grid, .footer-grid { min-width: 0; }
+  .hero-visual { overflow: hidden; }
   .services-grid { grid-template-columns: 1fr 1fr; }
   .results-grid { grid-template-columns: 1fr 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
